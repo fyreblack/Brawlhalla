@@ -39,6 +39,18 @@ $(document).ready(function() {
 // Get the current date
 // Get the current date
 
+// navbar
+const togglebtn=document.querySelector('.toggle_btn')
+const toggle_btnicon=document.querySelector('.toggle_btn i')
+const dropdownmenu=document.querySelector('.dropdown')
+
+togglebtn.onclick=function(){
+    dropdownmenu.classList.toggle('open')
+    const isopen=dropdownmenu.classList.contains('open')
+
+    toggle_btnicon.classList=isopen?'fa-solid fa-xmark fa-2xl':'fa-solid fa-bars fa-2xl'
+
+}
 
 
 
